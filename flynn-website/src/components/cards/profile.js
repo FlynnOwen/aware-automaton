@@ -22,14 +22,14 @@ export default function ProfileCard() {
           <Typography gutterBottom variant="h5" component="div" textAlign="center" alignItems="center">
             Flynn Owen
           </Typography>
-          <Grid container item justifyContent="center">
-            <Grid item xs={2}>
+          <Grid container item justifyContent="center" alignItems="center" style={{ gap: 15 }}>
+            <Grid item xs={1}>
             <GitHubIcon/>
             </Grid>
-            <Grid item xs={2}>
+            <Grid item xs={1}>
             <LinkedInIcon/>
             </Grid>
-            <Grid item xs={2}>
+            <Grid item xs={1}>
             <EmailIcon/>
             </Grid>
           </Grid>
