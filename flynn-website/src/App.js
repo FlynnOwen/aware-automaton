@@ -1,5 +1,6 @@
 import './App.css';
-import { AppBar, IconButton, MenuItem, Toolbar, Typography } from '@material-ui/core';
+import ProfileCard from './components/cards/profile';
+import CustomAppBar from './components/navbar/appbar';
 
 
 function App() {
@@ -28,16 +29,12 @@ function App() {
   // </project-grid>
   // </div>
 
-  return (<AppBar position="static">
-    <Toolbar variant="dense">
-      <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
-        <MenuItem />
-      </IconButton>
-      <Typography variant="h6" color="inherit" component="div">
-        Photos
-      </Typography>
-    </Toolbar>
-  </AppBar>);
+  return (
+    <>
+    <CustomAppBar/>
+    <ProfileCard/>
+    </>
+  );
 }
 
 export default App;
