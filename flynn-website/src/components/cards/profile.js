@@ -11,7 +11,7 @@ import ContactPageIcon from '@mui/icons-material/ContactPage';
 
 export default function ProfileCard() {
   return (
-    <Card sx={{ maxWidth: 345, m: 5, display: 'inline-block'}} >
+    <Card sx={{ maxWidth: 345, m: 5, height: 500}} >
       <CardActionArea>
         <CardMedia
           component="img"
