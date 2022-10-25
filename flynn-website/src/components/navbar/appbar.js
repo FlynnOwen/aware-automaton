@@ -14,7 +14,14 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+const navItems = [{
+  'item':'Home',
+  'url': '/home'
+},
+{
+  'item': 'About',
+  'url': '/about'
+}];
 
 function CustomAppBar(props) {
   const { window } = props;
@@ -31,7 +38,7 @@ function CustomAppBar(props) {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
+        {navItems.map(({item, url}) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary={item} />
@@ -65,8 +72,8 @@ function CustomAppBar(props) {
             &#123;Aware Automata&#125;
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
+            {navItems.map(( {item, url} ) => (
+              <Button key={item} href={url} sx={{ color: '#fff' }}>
                 {item}
               </Button>
             ))}

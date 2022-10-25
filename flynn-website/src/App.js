@@ -3,42 +3,31 @@ import ProfileCard from './components/cards/profile';
 import CustomAppBar from './components/navbar/appbar';
 import CustomBody from './components/body/body';
 import { Box } from '@mui/material';
+import { Route } from 'react-router';
 
 
 function App() {
-  // <Navbar/>
-  // <div>
-  // <profile img/>
-  // <Contact card/>
-  // </div>
-  // <div>
-  // <experience-list>
-  // <experience/>
-  // <experience/>
-  // </experience-list>
-  // </div>
-  // <div>
-  // <education-list>
-  // <education/>
-  // <education/>
-  // </education-list>
-  // </div>
-  // <div>
-  // <project-grid>
-  // <project-card>
-  // <project-card>
-  // <project-card>
-  // </project-grid>
-  // </div>
 
   return (
-    <>
-    <CustomAppBar/>
-    <Box sx={{display: 'flex'}}>
-      <ProfileCard/>
-      <CustomBody/>
-    </Box>
-    </>
+    <div>
+      <Route path="/about">
+        <div>
+        <CustomAppBar/>
+        <Box sx={{display: 'flex'}}>
+          <ProfileCard/>
+          <CustomBody/>
+        </Box>
+        </div>
+      </Route>
+      <Route path="/home">
+      <div>
+      <CustomAppBar/>
+      <Box sx={{display: 'flex'}}>
+        <ProfileCard/>
+      </Box>
+      </div>
+    </Route>
+  </div>
   );
 }
 
