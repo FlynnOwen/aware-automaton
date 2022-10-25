@@ -4,6 +4,8 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import BookIcon from '@mui/icons-material/Book';
+import { Button } from '@mui/material';
 
 export default function AcademicAccordion(props) {
     return (
@@ -18,9 +20,16 @@ export default function AcademicAccordion(props) {
           <Typography sx={{ width: '66%'}}>Masters of Science</Typography>
           </AccordionSummary>
           <AccordionDetails>
+          <Button variant="outlined" href="https://openaccess.wgtn.ac.nz/articles/thesis/Finite_Mixture_Models_-_A_Divide_and_Conquer_Approach/21300270/1" startIcon={<BookIcon/>} sx={{mb: 3}}>
+            Thesis
+            </Button>
+          <Typography sx={{color: 'text.secondary', mb: 2}}>
+              Grade: Distinction
+            </Typography>
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              malesuada lacus ex, sit amet blandit leo lobortis eget.
+            Finite Mixture Models - A Divide and Conquer Approach. Funded by a Marsden scholarship, and Supervised by 
+            Prof. Richard Arnold and Dr. Louise McMillan, my thesis investigated a novel, computationally efficient
+            approach to applying model-based clustering to datasets with unknown numbers of mixture components.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -34,9 +43,12 @@ export default function AcademicAccordion(props) {
             <Typography sx={{ width: '66%'}}>Masters of Applied Statistics</Typography>
           </AccordionSummary>
           <AccordionDetails>
+          <Typography sx={{color: 'text.secondary', mb: 2}}>
+              Grade: Distinction
+            </Typography>
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              malesuada lacus ex, sit amet blandit leo lobortis eget.
+              A course-based post graduate degree. My courses focussed heavily on computational statistics, machine learning and data science.
+              An outstanding result in the research component of this degree awarded me a scholarship to complete the Masters of Science degree.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -51,8 +63,8 @@ export default function AcademicAccordion(props) {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              malesuada lacus ex, sit amet blandit leo lobortis eget.
+              My majors were mathematics and economics for my undergraduate, bachelors degree. Math courses were heavily focussed in both
+              discrete and pure mathematics, while my economics courses were a combination of both macro and micro, but having heavy math influence.
             </Typography>
           </AccordionDetails>
         </Accordion>
