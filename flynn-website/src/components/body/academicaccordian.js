@@ -14,7 +14,8 @@ export default function AcademicAccordion(props) {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography>Masters of Science</Typography>
+          <Typography sx={{ width: '33%', color: 'text.secondary', flexShrink: 0 }}>Victoria University of Wellington</Typography>
+          <Typography sx={{ width: '66%'}}>Masters of Science</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
@@ -29,7 +30,8 @@ export default function AcademicAccordion(props) {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <Typography>Masters of Applied Statistics</Typography>
+            <Typography sx={{ width: '33%', color: 'text.secondary', flexShrink: 0 }}>Victoria University of Wellington</Typography>
+            <Typography sx={{ width: '66%'}}>Masters of Applied Statistics</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
@@ -44,7 +46,8 @@ export default function AcademicAccordion(props) {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <Typography>Bachelors</Typography>
+            <Typography sx={{ width: '33%', color: 'text.secondary', flexShrink: 0 }}>Victoria University of Wellington</Typography>
+            <Typography sx={{ width: '66%'}}>Bachelors</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
