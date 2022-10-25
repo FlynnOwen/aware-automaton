@@ -3,7 +3,6 @@ import ProfileCard from './components/cards/profile';
 import CustomAppBar from './components/navbar/appbar';
 import CustomBody from './components/body/body';
 import { Box } from '@mui/material';
-import SimpleAccordion from './components/body/dropdown';
 
 
 function App() {
