@@ -1,12 +1,13 @@
 import * as React from 'react';
 import { Paper } from '@mui/material';
-import { makeStyles } from '@material-ui/core/styles';
+import SimpleAccordion from './dropdown';
 
 function CustomBody() {
     
   return (
     <Paper elevation={3} sx={{ mt: 5, width: '50%'}}>
-        Test
+        <SimpleAccordion ml={5} mr={5} mt={5}/>
+        <SimpleAccordion ml={5} mr={5} mt={5}/>
     </Paper>
   );
 }
