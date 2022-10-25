@@ -1,6 +1,9 @@
 import './App.css';
 import ProfileCard from './components/cards/profile';
 import CustomAppBar from './components/navbar/appbar';
+import CustomBody from './components/body/body';
+import { Box } from '@mui/material';
+import SimpleAccordion from './components/body/dropdown';
 
 
 function App() {
@@ -32,7 +35,10 @@ function App() {
   return (
     <>
     <CustomAppBar/>
-    <ProfileCard/>
+    <Box sx={{display: 'flex'}}>
+      <ProfileCard/>
+      <CustomBody/>
+    </Box>
     </>
   );
 }

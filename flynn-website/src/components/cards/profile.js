@@ -10,7 +10,7 @@ import EmailIcon from '@mui/icons-material/Email';
 
 export default function ProfileCard() {
   return (
-    <Card sx={{ maxWidth: 345, m: 5}} >
+    <Card sx={{ maxWidth: 345, m: 5, display: 'inline-block'}} >
       <CardActionArea>
         <CardMedia
           component="img"
