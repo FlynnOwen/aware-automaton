@@ -7,6 +7,7 @@ import { CardActionArea, CardActions, Grid } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
 
 export default function ProfileCard() {
   return (
@@ -34,6 +35,9 @@ export default function ProfileCard() {
             </Grid>
             <Grid item xs={1}>
             <LinkedInIcon/>
+            </Grid>
+            <Grid item xs={1}>
+            <ContactPageIcon/>
             </Grid>
             <Grid item xs={1}>
             <EmailIcon/>
