@@ -61,17 +61,8 @@ function CustomAppBar(props) {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <AppBar component="nav">
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton>
+      <AppBar component="nav" style={{ background: '#339966' }}>
+        <Toolbar style={{minHeight: 48}}>
           <Typography
             variant="h6"
             component="div"
