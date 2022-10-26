@@ -2,6 +2,7 @@ import './App.css';
 import ProfileCard from './components/cards/profile';
 import CustomAppBar from './components/navbar/appbar';
 import CustomBody from './components/body/body';
+import CustomParticles from './components/body/customparticles';
 import { Box } from '@mui/material';
 import { Redirect, Route } from 'react-router';
 
@@ -9,9 +10,9 @@ function App() {
 
   return (
     <div>
-
       <Route path="/">
         <CustomAppBar/>
+        <CustomParticles/>
       </Route>
 
       <Route path="/" exact>
