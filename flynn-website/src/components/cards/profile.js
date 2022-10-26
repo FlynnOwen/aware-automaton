@@ -31,16 +31,24 @@ export default function ProfileCard() {
       <CardActions>
       <Grid container item justifyContent="center" alignItems="center" style={{ gap: 15 }}>
             <Grid item xs={1}>
+            <a href='https://github.com/FlynnOwen'>
             <GitHubIcon/>
+            </a>
             </Grid>
             <Grid item xs={1}>
+            <a href='https://www.linkedin.com/in/flynn-owen-076160135/'>
             <LinkedInIcon/>
+            </a>
             </Grid>
             <Grid item xs={1}>
+            <a href='https://github.com/FlynnOwen'>
             <ContactPageIcon/>
+            </a>
             </Grid>
             <Grid item xs={1}>
+            <a href='https://github.com/FlynnOwen'>
             <EmailIcon/>
+            </a>
             </Grid>
           </Grid>
       </CardActions>
