@@ -77,7 +77,7 @@ function CustomAppBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            &#123;Aware Automata&#125;
+            &#123;Aware Automaton&#125;
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map(( {item, url} ) => (
