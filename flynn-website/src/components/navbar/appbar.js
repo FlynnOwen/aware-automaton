@@ -19,6 +19,14 @@ const navItems = [{
   'url': '/home'
 },
 {
+'item': 'Blog',
+'url': '/blog'
+},
+{
+  'item': 'Projects',
+  'url': '/projects'
+},
+{
   'item': 'About',
   'url': '/about'
 }];

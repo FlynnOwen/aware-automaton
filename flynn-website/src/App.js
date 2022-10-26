@@ -27,6 +27,22 @@ function App() {
       </Box>
       </div>
     </Route>
+    <Route path="/blog">
+      <div>
+      <CustomAppBar/>
+      <Box sx={{display: 'flex'}}>
+        <ProfileCard/>
+      </Box>
+      </div>
+    </Route>
+    <Route path="/projects">
+      <div>
+      <CustomAppBar/>
+      <Box sx={{display: 'flex'}}>
+        <ProfileCard/>
+      </Box>
+      </div>
+    </Route>
   </div>
   );
 }
