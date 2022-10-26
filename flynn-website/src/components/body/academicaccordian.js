@@ -17,7 +17,7 @@ export default function AcademicAccordion(props) {
             id="panel1a-header"
           >
           <Typography sx={{ width: '33%', color: 'text.secondary', flexShrink: 0 }}>Victoria University of Wellington</Typography>
-          <Typography sx={{ width: '66%'}}>Masters of Science</Typography>
+          <Typography sx={{ width: '66%'}}>Masters of Science (Statistics)</Typography>
           </AccordionSummary>
           <AccordionDetails>
           <Button variant="outlined" href="https://openaccess.wgtn.ac.nz/articles/thesis/Finite_Mixture_Models_-_A_Divide_and_Conquer_Approach/21300270/1" startIcon={<BookIcon/>} sx={{mb: 3}}>
@@ -59,7 +59,7 @@ export default function AcademicAccordion(props) {
             id="panel2a-header"
           >
             <Typography sx={{ width: '33%', color: 'text.secondary', flexShrink: 0 }}>Victoria University of Wellington</Typography>
-            <Typography sx={{ width: '66%'}}>Bachelors</Typography>
+            <Typography sx={{ width: '66%'}}>Bachelors (Mathematics, Economics)</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
