@@ -4,8 +4,6 @@ import CustomAppBar from './components/navbar/appbar';
 import CustomBody from './components/body/body';
 import { Box } from '@mui/material';
 import { Redirect, Route } from 'react-router';
-import NotFound from './pages/notfound';
-
 
 function App() {
 
@@ -13,7 +11,7 @@ function App() {
     <div>
 
       <Route path="/">
-      <CustomAppBar/>
+        <CustomAppBar/>
       </Route>
 
       <Route path="/" exact>
