@@ -10,7 +10,7 @@ function CustomBody() {
         <Typography variant="h3" sx={{ mt:5 }}>Kia Ora!</Typography>
         <Typography sx={{ mt:5, ml: 5, mr: 5 }}>
           My name is Flynn Owen. <br/>
-          I'm a cross between data engineer and data scientist. 
+          I'm a cross between software engineer and data scientist. 
           I love all things math and programming, and work on a large variety of projects in my free time. 
           Some are hosted on this site, others on my Github page. 
           </Typography>
