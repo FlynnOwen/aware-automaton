@@ -3,6 +3,9 @@
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@mui/material": "^5.10.10",
-    "react-router-dom": "^5.3.4"
+    "react-particles": "^2.3.3",
+    "react-router-dom": "^5.3.4",
+    "react-tsparticles": "^2.3.3",
+    "tsparticles-engine": "^2.3.3"
   }
 }
