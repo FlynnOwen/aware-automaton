@@ -14,7 +14,7 @@ export default function WorkAccordion(props) {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography sx={{ width: '33%', color: 'text.secondary', flexShrink: 0 }}>DOT Loves Data</Typography>
+          <Typography sx={{ width: '33%', color: 'text.secondary'}}>DOT Loves Data</Typography>
           <Typography sx={{ width: '33%'}}>Data Engineer</Typography>
           <Typography sx={{ width: '33%', color: 'text.secondary' }}>04/21 - Present</Typography>
         </AccordionSummary>
@@ -31,7 +31,7 @@ export default function WorkAccordion(props) {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography sx={{ width: '33%', color: 'text.secondary', flexShrink: 0 }}>Spotlight Reporting</Typography>
+          <Typography sx={{ width: '33%', color: 'text.secondary'}}>Spotlight Reporting</Typography>
           <Typography sx={{ width: '33%'}}>Data Scientist</Typography>
           <Typography sx={{ width: '33%', color: 'text.secondary' }}>01/20 - 04/21</Typography>
         </AccordionSummary>
@@ -48,7 +48,7 @@ export default function WorkAccordion(props) {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography sx={{ width: '33%', color: 'text.secondary', flexShrink: 0 }}>Harmonic Analytics</Typography>
+          <Typography sx={{ width: '33%', color: 'text.secondary'}}>Harmonic Analytics</Typography>
           <Typography sx={{ width: '33%'}}>Intern</Typography>
           <Typography sx={{ width: '33%', color: 'text.secondary' }}>11/19 - 12/19</Typography>
         </AccordionSummary>
@@ -65,7 +65,7 @@ export default function WorkAccordion(props) {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography sx={{ width: '33%', color: 'text.secondary', flexShrink: 0 }}>Sealord Ltd</Typography>
+          <Typography sx={{ width: '33%', color: 'text.secondary' }}>Sealord Ltd</Typography>
           <Typography sx={{ width: '33%'}}>Data Analyst Intern</Typography>
           <Typography sx={{ width: '33%', color: 'text.secondary' }}>11/18 - 02/19</Typography>
         </AccordionSummary>
