@@ -61,7 +61,7 @@ function CustomAppBar(props) {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <AppBar component="nav" style={{ background: '#339966' }}>
+      <AppBar component="nav" style={{ background: 'transparent', boxShadow: 'None' }}>
         <Toolbar style={{minHeight: 48}}>
           <Typography
             variant="h6"
