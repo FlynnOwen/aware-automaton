@@ -4,17 +4,20 @@ import CustomAppBar from './components/navbar/appbar';
 import CustomBody from './components/body/body';
 import CustomParticles from './components/body/customparticles';
 import { Box, Fade, Typography } from '@mui/material';
-import { Redirect, Route } from 'react-router';
+import { Redirect, Route, Switch } from 'react-router';
+import CustomBlogBody from './pages/blog/body';
+import CustomProjectsBody from './pages/projects/body';
 
 function App() {
 
   return (
     <div>
+      <CustomParticles/>
       <Route path="/">
         <CustomAppBar/>
-        <CustomParticles/>
       </Route>
 
+      <Switch>
       <Route path="/" exact>
         <Redirect to='/home' />
       </Route>
@@ -49,6 +52,7 @@ function App() {
       <div>
       <Box sx={{display: 'flex'}}>
         <ProfileCard/>
+        <CustomBlogBody/>
       </Box>
       </div>
     </Route>
@@ -57,9 +61,11 @@ function App() {
       <div>
       <Box sx={{display: 'flex'}}>
         <ProfileCard/>
+        <CustomProjectsBody/>
       </Box>
       </div>
     </Route>
+    </Switch>
 
   </div>
   );
