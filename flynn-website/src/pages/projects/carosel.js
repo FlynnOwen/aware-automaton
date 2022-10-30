@@ -10,40 +10,52 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { Divider, Grid } from '@mui/material';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 
 
 const images = [
   {
     type: 'image',
-    label: 'rbclust - An R library for finite mixture modelling',
+    label: 'rbclust',
     imgPath:
     require('../../images/EM.gif'),
-    size: 240
+    size: 240,
+    description: "A dynamic library for GLM modelling of finite mixture models in R. \
+                  A novel 'divide and conquer' method is used for fitting mixture models with unknown numbers of components, \
+                  which was developed in my MSc thesis."
   },
   {
     type: 'image',
-    label: 'GOLC - A CLI implementation of Conways Game of Life',
+    label: 'GOLC',
     imgPath:
       require('../../images/GOLc.gif'),
-      size: 380
+      size: 380,
+    description: "A CLI application for game of life, written in C. It's fast, and renders well, with various input options. \
+                  Now has a few followers on Github."
   },
   {
     type: 'twitter',
-    label: 'ElonStoryBot - A Twitterbot markov chain trained on Elon Musk tweets',
-    type: 'twitterbot'
+    label: 'ElonStoryBot',
+    type: 'twitterbot',
+    description: "A Twitterbot which is a Markov chain trained on a combination of tweets scraped from Elon Musks account, \
+                  and a large dataset of childrens books. Utilizes the Tweepy API in Python, and various AWS services to \
+                  automatically tweet daily updates."
   },
   {
     type: 'image',
-    label: 'The All Knowing One - A Facebook Messenger connector for Open AIs GPT-3',
+    label: 'The All Knowing One',
     imgPath: require('../../images/GPT-3.gif'),
-    size: 380
+    size: 380,
+    description: "A 'connector' between Open AI's GPT-3 API and Facebook Messenger. Hosted on a Flask server, and uses a \
+                  PostgreSQL database to asynchronously log and remember conversations between users."
   },
   {
     type: 'image',
-    label: '{Aware Automaton} - A website built in React to act as a blog and portfolio',
+    label: '{Aware Automaton}',
     imgPath: require('../../images/Aware.gif'),
-    size: 380
+    size: 380,
+    description: "This website. Written in React to host my projects, blog and generally learn more about front end development."
   },
 ];
 
@@ -66,19 +78,6 @@ function SwipeableTextMobileStepper() {
 
   return (
     <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
-      <Paper
-        square
-        elevation={0}
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          height: 50,
-          pl: 2,
-          bgcolor: 'background.default',
-        }}
-      >
-        <Typography>{images[activeStep].label}</Typography>
-      </Paper>
       <SwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
@@ -90,33 +89,23 @@ function SwipeableTextMobileStepper() {
           <div key={step.label}>
             {Math.abs(activeStep - index) <= 2 ? (
               <div>
+              <Typography textAlign="center" fontSize={24} sx={{ mb:2, mt:2 }}>{step.label}</Typography>
               {step.type == 'image'?
               <Box
                 component="img"
                 sx={{
                   height: step.size,
                   width: '100%',
-                  mb: 3
                 }}
-                src={step.imgPath}
-                alt={step.label}
-              />
+                src={step.imgPath}/>
               : <TwitterTimelineEmbed
               sourceType="profile"
               screenName="ElonStoryBot"
               options={{height: 400}}
+              
             />}
-              <Grid container>
-              <Grid item xs>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              malesuada lacus ex, sit amet blandit leo lobortis eget.
-              </Grid>
-              <Divider orientation="vertical" flexItem/>
-              <Grid item xs>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              malesuada lacus ex, sit amet blandit leo lobortis eget.
-              </Grid>
-          </Grid>
+              <Button sx={{ mb:2, mt:2 }} variant="contained" color='secondary' startIcon={<GitHubIcon/>}> Github </Button>
+              <Typography>{step.description}</Typography>
           </div>
             ) : null}
         </div>
@@ -124,7 +113,6 @@ function SwipeableTextMobileStepper() {
         ))}
       </SwipeableViews>
       <MobileStepper
-        sx = {{ mt: 3}}
         steps={maxSteps}
         position="static"
         activeStep={activeStep}
