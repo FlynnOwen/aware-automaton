@@ -9,36 +9,40 @@ import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { Divider, Grid } from '@mui/material';
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
+
 
 
 const images = [
   {
+    type: 'image',
     label: 'rbclust - An R library for finite mixture modelling',
     imgPath:
     require('../../images/EM.gif'),
     size: 240
   },
   {
+    type: 'image',
     label: 'GOLC - A CLI implementation of Conways Game of Life',
     imgPath:
       require('../../images/GOLc.gif'),
       size: 380
   },
   {
+    type: 'twitter',
     label: 'ElonStoryBot - A Twitterbot markov chain trained on Elon Musk tweets',
-    imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250',
+    type: 'twitterbot'
   },
   {
+    type: 'image',
     label: 'The All Knowing One - A Facebook Messenger connector for Open AIs GPT-3',
-    imgPath:
-    require('../../images/GPT-3.gif'),
+    imgPath: require('../../images/GPT-3.gif'),
     size: 380
   },
   {
+    type: 'image',
     label: '{Aware Automaton} - A website built in React to act as a blog and portfolio',
-    imgPath:
-    require('../../images/Aware.gif'),
+    imgPath: require('../../images/Aware.gif'),
     size: 380
   },
 ];
@@ -85,6 +89,8 @@ function SwipeableTextMobileStepper() {
         {images.map((step, index) => (
           <div key={step.label}>
             {Math.abs(activeStep - index) <= 2 ? (
+              <div>
+              {step.type == 'image'?
               <Box
                 component="img"
                 sx={{
@@ -95,19 +101,24 @@ function SwipeableTextMobileStepper() {
                 src={step.imgPath}
                 alt={step.label}
               />
+              : <TwitterTimelineEmbed
+              sourceType="profile"
+              screenName="ElonStoryBot"
+              options={{height: 400}}
+            />}
+              <Grid container>
+              <Grid item xs>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+              malesuada lacus ex, sit amet blandit leo lobortis eget.
+              </Grid>
+              <Divider orientation="vertical" flexItem/>
+              <Grid item xs>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+              malesuada lacus ex, sit amet blandit leo lobortis eget.
+              </Grid>
+          </Grid>
+          </div>
             ) : null}
-            
-        <Grid container>
-            <Grid item xs>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-            </Grid>
-            <Divider orientation="vertical" flexItem/>
-            <Grid item xs>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-            </Grid>
-        </Grid>
         </div>
           
         ))}
