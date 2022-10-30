@@ -20,8 +20,9 @@ export default function WorkAccordion(props) {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            Ingenuitive and tight knit team doing cool things with data. Some of my work has included working the DDI - an index
+            measuring deprivation around NZ. The DCT - an index measuring carbon emissions at a daily frequency around NZ. And
+            a large amount of ETL jobs using Jenkins, Python, Selenium and PostgreSQL.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -37,8 +38,10 @@ export default function WorkAccordion(props) {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            Built the foundations of Spotlight Reportings data infrastructure in AWS, including a data lake and data warehouse.
+            Deployed a productionised churn and conversion model for the sales and customer success teams to use, with dashboards 
+            visualising relevant data. Created a proof concept time series prediction product analogous to a 'three way forecast'
+            traditionally used by accountants. All written in Python, SQL and Docker.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -54,8 +57,8 @@ export default function WorkAccordion(props) {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            A small internship were I worked on creating a dashboard for a large NZ sports streaming service. 
+            All written in R Shiny.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -71,8 +74,7 @@ export default function WorkAccordion(props) {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            An internship within the IT department of Sealord, where I did reporting in Excel and SQL to provide insights to the sales team.
           </Typography>
         </AccordionDetails>
       </Accordion>
