@@ -3,7 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea, CardActions, Grid } from '@mui/material';
+import { Button, CardActionArea, CardActions, Grid } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
@@ -29,26 +29,26 @@ export default function ProfileCard() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-      <Grid container item justifyContent="center" alignItems="center" style={{ gap: 15 }}>
-            <Grid item xs={1}>
-            <a href='https://github.com/FlynnOwen'>
+      <Grid container item justifyContent="center" alignItems="center">
+            <Grid item>
+              <Button href='https://github.com/FlynnOwen' variant="contained" size="small" color='secondary' sx={{m: 0.2}}>
             <GitHubIcon/>
-            </a>
+            </Button>
             </Grid>
-            <Grid item xs={1}>
-            <a href='https://www.linkedin.com/in/flynn-owen-076160135/'>
+            <Grid item>
+            <Button href='https://www.linkedin.com/in/flynn-owen-076160135/' variant="contained" size="small" color='secondary' sx={{m: 0.2}}>
             <LinkedInIcon/>
-            </a>
+            </Button>
             </Grid>
-            <Grid item xs={1}>
-            <a href='https://github.com/FlynnOwen'>
+            <Grid itemScope>
+            <Button href='https://github.com/FlynnOwen' variant="contained" size="small" color='secondary' sx={{m: 0.2}}>
             <ContactPageIcon/>
-            </a>
+            </Button>
             </Grid>
-            <Grid item xs={1}>
-            <a href='https://github.com/FlynnOwen'>
+            <Grid item>
+            <Button href='https://github.com/FlynnOwen' variant="contained" size="small" color='secondary' sx={{m: 0.2}}>
             <EmailIcon/>
-            </a>
+            </Button>
             </Grid>
           </Grid>
       </CardActions>
