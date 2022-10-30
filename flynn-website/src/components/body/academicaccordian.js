@@ -5,12 +5,12 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import BookIcon from '@mui/icons-material/Book';
-import { Button } from '@mui/material';
+import { Box, Button } from '@mui/material';
 
 export default function AcademicAccordion(props) {
     return (
-      <div>
-        <Accordion sx={{ml: props.ml, mr: props.mr, mt: props.mt}} disableGutters={true}>
+      <Box sx={{mt: props.mt}}>
+        <Accordion sx={{ml: props.ml, mr: props.mr}} disableGutters={true}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
@@ -68,6 +68,6 @@ export default function AcademicAccordion(props) {
             </Typography>
           </AccordionDetails>
         </Accordion>
-      </div>
+      </Box>
     );
   }
