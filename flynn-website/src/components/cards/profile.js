@@ -20,11 +20,11 @@ export default function ProfileCard() {
           alt="Binkie"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" textAlign="center" alignItems="center">
+          <Typography gutterBottom variant="h5" component="div" textAlign="center">
             Flynn Owen
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            What a dude I am. Look at me, I am one hell of a dude.
+          <Typography variant="body2" color="text.secondary" textAlign="center">
+          &#128075; Kia Ora! Take a look around.
           </Typography>
         </CardContent>
       </CardActionArea>
