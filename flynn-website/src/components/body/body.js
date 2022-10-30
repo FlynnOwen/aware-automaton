@@ -18,7 +18,7 @@ function CustomBody() {
           This site is supposed to be a scratchpad for me to learn React, and share both my portfolio and fun side projects with you. 
           I hope there is something for you here.
           </Typography>
-          <Typography sx={{ mt: 3} }> Flynn </Typography>
+          <Typography sx={{ mt: 3, fontFamily: 'cursive'} }> Flynn </Typography>
         <Typography variant="h4" sx={{ mt:5 }}>Work Experience</Typography>
         <WorkAccordion ml={5} mr={5} mt={5}/>
         <Typography variant="h4" sx={{ mt:5 }}>Academic Experience</Typography>
