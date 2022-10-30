@@ -23,7 +23,8 @@ const images = [
     size: 240,
     description: "A dynamic library for GLM modelling of finite mixture models in R. \
                   A novel 'divide and conquer' method is used for fitting mixture models with unknown numbers of components, \
-                  which was developed in my MSc thesis."
+                  which was developed in my MSc thesis.",
+    link: "https://github.com/FlynnOwen"
   },
   {
     type: 'image',
@@ -32,7 +33,9 @@ const images = [
       require('../../images/GOLc.gif'),
       size: 380,
     description: "A CLI application for game of life, written in C. It's fast, and renders well, with various input options. \
-                  Now has a few followers on Github."
+                  Now has a few followers on Github.",
+    link: "https://github.com/FlynnOwen/GOL-C"
+
   },
   {
     type: 'twitter',
@@ -40,7 +43,8 @@ const images = [
     type: 'twitterbot',
     description: "A Twitterbot which is a Markov chain trained on a combination of tweets scraped from Elon Musks account, \
                   and a large dataset of childrens books. Utilizes the Tweepy API in Python, and various AWS services to \
-                  automatically tweet daily updates."
+                  automatically tweet daily updates.",
+    link: "https://github.com/FlynnOwen/elon-markov-chain-twitter-bot"
   },
   {
     type: 'image',
@@ -48,14 +52,16 @@ const images = [
     imgPath: require('../../images/GPT-3.gif'),
     size: 380,
     description: "A 'connector' between Open AI's GPT-3 API and Facebook Messenger. Hosted on a Flask server, and uses a \
-                  PostgreSQL database to asynchronously log and remember conversations between users."
+                  PostgreSQL database to asynchronously log and remember conversations between users.",
+    link: "https://github.com/FlynnOwen/GPT-3-App"
   },
   {
     type: 'image',
     label: '{Aware Automaton}',
     imgPath: require('../../images/Aware.gif'),
     size: 380,
-    description: "This website. Written in React to host my projects, blog and generally learn more about front end development."
+    description: "This website. Written in React to host my projects, blog and generally learn more about front end development.",
+    link: "https://github.com/FlynnOwen/flynn-website-React"
   },
 ];
 
@@ -104,7 +110,7 @@ function SwipeableTextMobileStepper() {
               options={{height: 400}}
               
             />}
-              <Button sx={{ mb:2, mt:2 }} variant="contained" color='secondary' startIcon={<GitHubIcon/>}> Github </Button>
+              <Button sx={{ mb:2, mt:2 }} variant="contained" color='secondary' href={step.link} disableRipple="true" startIcon={<GitHubIcon/>}> Github </Button>
               <Typography>{step.description}</Typography>
           </div>
             ) : null}
