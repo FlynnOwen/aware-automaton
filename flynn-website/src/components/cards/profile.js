@@ -3,7 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions, Grid } from '@mui/material';
+import { Button, CardActionArea, CardActions, Fade, Grid } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
@@ -11,6 +11,7 @@ import ContactPageIcon from '@mui/icons-material/ContactPage';
 
 export default function ProfileCard() {
   return (
+    <Fade in={true} timeout={{enter: 1000}}>
     <Card sx={{ maxWidth: 345, m: 5, height: 500}} >
       <CardActionArea>
         <CardMedia
@@ -53,5 +54,6 @@ export default function ProfileCard() {
           </Grid>
       </CardActions>
     </Card>
+    </Fade>
   );
 }
