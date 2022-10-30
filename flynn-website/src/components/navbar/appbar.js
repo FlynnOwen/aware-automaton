@@ -12,6 +12,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { useHistory } from 'react-router-dom';
 
 const drawerWidth = 240;
 const navItems = [{
@@ -34,6 +35,7 @@ const navItems = [{
 function CustomAppBar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const history = useHistory();
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -72,7 +74,7 @@ function CustomAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map(( {item, url} ) => (
-              <Button key={item} href={url} sx={{ color: '#fff' }}>
+              <Button key={item} onClick={() => history.push(url)} sx={{ color: '#fff' }}>
                 {item}
               </Button>
             ))}
