@@ -31,7 +31,7 @@ const images = [
     label: 'GOLC',
     imgPath:
       require('../../images/GOLc.gif'),
-      size: 380,
+      size: 445,
     description: "A CLI application for game of life, written in C. It's fast, and renders well, with various input options. \
                   Now has a few followers on Github.",
     link: "https://github.com/FlynnOwen/GOL-C"

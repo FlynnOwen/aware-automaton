@@ -20,7 +20,7 @@ export default function AcademicAccordion(props) {
           <Typography sx={{ width: '66%'}}>Masters of Science (Statistics)</Typography>
           </AccordionSummary>
           <AccordionDetails>
-          <Button variant="outlined" href="https://openaccess.wgtn.ac.nz/articles/thesis/Finite_Mixture_Models_-_A_Divide_and_Conquer_Approach/21300270/1" startIcon={<BookIcon/>} sx={{mb: 3}}>
+          <Button variant="outlined" href="https://openaccess.wgtn.ac.nz/articles/thesis/Finite_Mixture_Models_-_A_Divide_and_Conquer_Approach/21300270/1" startIcon={<BookIcon/>} sx={{mb: 3}} variant="contained" color="secondary">
             Thesis
             </Button>
           <Typography sx={{color: 'text.secondary'}}>
