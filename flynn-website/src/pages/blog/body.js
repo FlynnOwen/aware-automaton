@@ -13,6 +13,13 @@ const blogPosts = [
       <br/> <br/>
       It was titled 'Finite Mixture Models - A Divide and Conquer Approach', and investigated a novel, computationally efficient way
       to find the optimal number of mixture components - a very common problem in clustering.
+      <Box component="img" src={require('../../images/blog/Split_Full.png')} height={300}></Box>
+      <Box component="img" src={require('../../images/blog/DMLL_sankey_800.png')} height={300}></Box>
+      <Box component="img" src={require('../../images/blog/HNTB_sankey_800.png')} height={300}></Box>
+      <Box component="img" src={require('../../images/blog/HSR_sankey_800.png')} height={300}></Box>
+      <Box component="img" src={require('../../images/blog/HRL_sankey_800.png')} height={300}></Box>
+      <Box component="img" src={require('../../images/blog/R_Values_line_Study3.png')} height={300}></Box>
+      <Box component="img" src={require('../../images/blog/Run_times_line_Study3.png')} height={300}></Box>
     </Typography>
   }
 ]
