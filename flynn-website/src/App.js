@@ -7,6 +7,8 @@ import { Box, Fade, Typography } from '@mui/material';
 import { Redirect, Route, Switch } from 'react-router';
 import CustomBlogBody from './pages/blog/body';
 import CustomProjectsBody from './pages/projects/body';
+import BlogNav from './pages/blog/blognav';
+import CustomBlogPage from './pages/blog/blogpage';
 
 function App() {
 
@@ -39,30 +41,23 @@ function App() {
         </Route>
 
         <Route path="/about">
-          <div>
             <Box sx={{ display: 'flex' }}>
               <ProfileCard />
               <CustomBody />
             </Box>
-          </div>
         </Route>
 
         <Route path="/blog">
-          <div>
-            <Box sx={{ display: 'flex' }}>
-              <ProfileCard />
-              <CustomBlogBody />
+            <Box>
+              <CustomBlogPage/>
             </Box>
-          </div>
         </Route>
 
         <Route path="/projects">
-          <div>
             <Box sx={{ display: 'flex' }}>
               <ProfileCard />
               <CustomProjectsBody />
             </Box>
-          </div>
         </Route>
       </Switch>
 
