@@ -17,7 +17,10 @@ function BlogNav(props) {
         
     {props.blogPosts.map((step, index) => (
         <ListItem button onClick={() => { props.handleIndex(index); }}>
-        <ListItemText primary={step.title} sx={{textAlign: "center"}}/>
+        <ListItemText primary={<div>
+          <div>{step.title}</div>
+          <div>{step.date}</div>
+          </div>} sx={{textAlign: "center"}}/>
       </ListItem>
     ))}
 
