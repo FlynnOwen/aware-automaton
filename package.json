@@ -3,6 +3,8 @@
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@mui/material": "^5.10.10",
+    "@types/react-latex": "^2.0.0",
+    "react-latex": "^2.0.0",
     "react-particles": "^2.3.3",
     "react-router-dom": "^5.3.4",
     "react-swipeable-views": "^0.14.0",
