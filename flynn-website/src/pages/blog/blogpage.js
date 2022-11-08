@@ -58,16 +58,30 @@ const blogPosts = [
     <br/>
     <br/>
     Additional improvements have been made on simply maximizing
-    the likelihood function - such as including something known as an expectation step, which calculates the expectation of a latent variable that
-    is cluster membership. The expectation (E) step is defined as:
+    the likelihood function - such as including something known as an expectation step, which calculates the expectation of a latent variable, Z that
+    is cluster membership. Z is an n x R matrix defined as:
     <br/>
     <br/>
-    <Latex>{`$$\\prod_{i=1}^n\\prod_{j=1}^m\\sum_{r=1}^R \\pi_r f(\\theta_r|Y)$$`}</Latex>
+    <Latex>{`$$z_{ir} = \\begin{cases} 1 & \\text{if row $i$ is in cluster $r$} \\\\ 0 & \\text{otherwise} \\\\ \\end{cases}$$`}</Latex>
+    <br/>
+    <br/>
+    To estimate Z, the expectation (E) step is defined as:
+    <br/>
+    <br/>
+    <Latex>{`$$E[z_{ir} | \\widehat{\\pi}, \\widehat{\\theta}| Y] = \\widehat{z}_{ir} = \\frac{\\widehat{\\pi}_r \\prod^m_{j=1}f_r(y_{ij}| \\widehat{\\theta})}{\\sum_{r'=1}^{R}\\widehat{\\pi}_{r'} \\prod^m_{j=1}f_{r'}(y_{ij}| \\widehat{\\theta})}. $$`}</Latex>
     <br/>
     <br/>
     The Expectation-Maximisation (EM) algorithm is a popular adaption that utilizes iteration of the maximization of the likelihood
-    function with the expectation step.
-
+    function with the expectation step, as well as a new, maximisation step (the M step), that includes Z as a parameter, but is ommitted here.
+    The EM algorithm is known as accurate but very slow - due to it's iteration.
+    <br/>
+    <br/>
+    Now that we have established how mixture models are defined and fitted, we still need to define how to find the optimal number of clusters when fitting them.
+    Usually, this is done by fitting a mixture model with R = 1 component, calculating the Likelihood Ratio Test Statistic (LRTS), or some penalised likelihood value -
+    the Aikaike or Bayesian Information Criterion (AIC, BIC), incrementing R = R + 1, refitting, and recalculating the metric, and finally halting when either the AIC / BIC finds
+    a minimum, or the LRTS is rejected.
+    <br/>
+    <br/>
     <Box sx={{m: 3}}>
     <Box component="img" src={require('../../images/blog/DMLL_sankey_800.png')} height={300}></Box>
     <Typography>Figure 3: A Sankey diagram of DMLL.</Typography>
