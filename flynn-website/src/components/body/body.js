@@ -7,7 +7,7 @@ function CustomBody() {
     
   return (
     <Fade in={true} timeout={{enter: 1000}}>
-    <Paper elevation={3} sx={{ mt: 5, mb: 5, width: '50%', textAlign: "center"}}>
+    <Paper elevation={3} sx={{ mt: 5, mb: 5, textAlign: "center"}}>
         <Typography variant="h3" sx={{ mt:3 }}>&#123;About&#125;</Typography>
         <Divider variant="middle" sx={{ mt: 3 }} />
         <Typography sx={{ mt:5, ml: 5, mr: 5 }}>

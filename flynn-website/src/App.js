@@ -3,12 +3,12 @@ import ProfileCard from './components/cards/profile';
 import CustomAppBar from './components/navbar/appbar';
 import CustomBody from './components/body/body';
 import CustomParticles from './components/body/customparticles';
-import { Box, Fade, Grid, Typography } from '@mui/material';
+import { Fade, Grid, Typography } from '@mui/material';
 import { Redirect, Route, Switch } from 'react-router';
-import CustomBlogBody from './pages/blog/body';
 import CustomProjectsBody from './pages/projects/body';
 import BlogNav from './pages/blog/blognav';
-import CustomBlogPage from './pages/blog/blogpage';
+import CustomBlogBody from './pages/blog/body';
+import { blogPosts } from './pages/blog/blogpage';
 
 function App() {
 
@@ -51,8 +51,8 @@ function App() {
           <CustomBody />
         </Route>
 
-        <Route path="/blog">
-          <CustomBlogPage/>
+        <Route path="/blog/:index">
+          <CustomBlogBody/>
         </Route>
 
         <Route path="/projects">
@@ -61,8 +61,15 @@ function App() {
 
       </Switch>
       </Grid>
+
       <Grid xs={3}>
+
+      <Route path="/blog">
+        <BlogNav blogPosts={blogPosts}/>
+      </Route>
+
       </Grid>
+
     </Grid>
 
     </div>

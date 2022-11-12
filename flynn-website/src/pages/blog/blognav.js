@@ -1,6 +1,6 @@
-import { Divider, Fade, List, ListItem, ListItemText, Paper, Typography } from '@mui/material';
+import { Fade, List, ListItem, ListItemText, Paper, Typography } from '@mui/material';
 import * as React from 'react';
-import BlogPost from './blogpost';
+import { useHistory } from 'react-router-dom';
 
 const style = {
     maxWidth: 360,
@@ -8,6 +8,11 @@ const style = {
   };
 
 function BlogNav(props) {
+
+  const history = useHistory();
+  const handleIndex = (index) => {
+    history.push('/blog/' + index);
+  };
     
   return (
     <Fade in={true} timeout={{enter: 1000}}>
@@ -16,7 +21,7 @@ function BlogNav(props) {
     <List sx={style} component="nav" aria-label="mailbox folders">
         
     {props.blogPosts.map((step, index) => (
-        <ListItem button onClick={() => { props.handleIndex(index); }}>
+        <ListItem button onClick={() => { handleIndex(index); }}>
         <ListItemText primary={<div>
           <div>{step.title}</div>
           <div>{step.date}</div>

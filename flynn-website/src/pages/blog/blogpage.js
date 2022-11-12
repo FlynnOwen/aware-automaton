@@ -1,10 +1,8 @@
 import * as React from 'react';
 import { Box, Typography } from '@mui/material';
-import CustomBlogBody from './body';
-import BlogNav from './blognav';
 var Latex = require("react-latex");
 
-const blogPosts = [
+export const blogPosts = [
 {
     date: '31/10/2022',
     title: 'Rapid Mixture Modelling',
@@ -175,22 +173,3 @@ const blogPosts = [
     </Typography>
 }
 ]
-
-
-function CustomBlogPage() {
-    const [activeIndex, setActiveIndex] = React.useState(0);
-
-    function handleIndex(index)  {
-        setActiveIndex(index);
-        console.log(index);
-      };
-
-    return (
-        <Box sx={{display:'flex'}}>
-        <CustomBlogBody blogPost={blogPosts[activeIndex]}/>
-        <BlogNav blogPosts={blogPosts} handleIndex={handleIndex}/>
-        </Box>
-    );
-}
-
-export default CustomBlogPage;
