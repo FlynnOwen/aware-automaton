@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Box, Typography } from '@mui/material';
 import CustomBlogBody from './body';
 import BlogNav from './blognav';
-import ProfileCard from '../../components/cards/profile';
 var Latex = require("react-latex");
 
 const blogPosts = [
@@ -188,7 +187,6 @@ function CustomBlogPage() {
 
     return (
         <Box sx={{display:'flex'}}>
-        <ProfileCard />
         <CustomBlogBody blogPost={blogPosts[activeIndex]}/>
         <BlogNav blogPosts={blogPosts} handleIndex={handleIndex}/>
         </Box>

@@ -3,7 +3,7 @@ import ProfileCard from './components/cards/profile';
 import CustomAppBar from './components/navbar/appbar';
 import CustomBody from './components/body/body';
 import CustomParticles from './components/body/customparticles';
-import { Box, Fade, Typography } from '@mui/material';
+import { Box, Fade, Grid, Typography } from '@mui/material';
 import { Redirect, Route, Switch } from 'react-router';
 import CustomBlogBody from './pages/blog/body';
 import CustomProjectsBody from './pages/projects/body';
@@ -14,15 +14,22 @@ function App() {
 
   return (
     <div>
+
       <CustomParticles />
       <CustomAppBar />
+      <Grid container spacing={3}>
+      <Grid xs={3}>
+      <Route path={["/about", "/blog", "/projects"]}>
+        <ProfileCard /> 
+      </Route>
+      </Grid>
+      <Grid xs={6}>
 
       <Switch>
-        <Route path="/" exact>
+      <Route path="/" exact>
           <Redirect to='/home' />
-        </Route>
-
-        <Route path="/home">
+      </Route>
+      <Route path="/home">
           <div style={{display: "flex", flexDirection: "column", textAlign: "center", marginTop: "35vh"}}>
 
             <div style={{
@@ -41,25 +48,22 @@ function App() {
         </Route>
 
         <Route path="/about">
-            <Box sx={{ display: 'flex' }}>
-              <ProfileCard />
-              <CustomBody />
-            </Box>
+          <CustomBody />
         </Route>
 
         <Route path="/blog">
-            <Box>
-              <CustomBlogPage/>
-            </Box>
+          <CustomBlogPage/>
         </Route>
 
         <Route path="/projects">
-            <Box sx={{ display: 'flex' }}>
-              <ProfileCard />
-              <CustomProjectsBody />
-            </Box>
+          <CustomProjectsBody />
         </Route>
+
       </Switch>
+      </Grid>
+      <Grid xs={3}>
+      </Grid>
+    </Grid>
 
     </div>
   );
