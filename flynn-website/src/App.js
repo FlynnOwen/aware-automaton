@@ -29,6 +29,11 @@ function App() {
       <Route path="/" exact>
           <Redirect to='/home' />
       </Route>
+      
+      <Route path="/blog" exact>
+          <Redirect to='/blog/0' />
+      </Route>
+
       <Route path="/home">
           <div style={{display: "flex", flexDirection: "column", textAlign: "center", marginTop: "35vh"}}>
 
