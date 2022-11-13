@@ -1,5 +1,5 @@
-# flynn-website-React
-A personal website written in React
+# aware-automaton
+A scratchpad / portfolio / blog for Flynn Owen.
 
 # Component libraries
 https://mui.com/material-ui/getting-started/usage/
