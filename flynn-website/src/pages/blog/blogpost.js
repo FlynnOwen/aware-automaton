@@ -12,7 +12,7 @@ function BlogPost() {
   return (
     <Box>
     <Typography variant="h4" sx={{ m:3 }}> {blogPost.title} </Typography>
-    <Divider sx={{ mt:4, mb:4 }}><Chip label={blogPost.date} /></Divider>
+    <Chip sx={{ mt:1, mb:4 }} label={blogPost.date} />
     <Typography sx={{ ml: 8, mr:8, mb:8 }}> {blogPost.description} </Typography>
 
     </Box>
