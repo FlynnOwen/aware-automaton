@@ -2,13 +2,11 @@ import * as React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MobileStepper from '@mui/material/MobileStepper';
-import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
-import { Divider, Grid } from '@mui/material';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
@@ -41,6 +39,7 @@ const images = [
     type: 'twitter',
     label: 'ElonStoryBot',
     type: 'twitterbot',
+    size: 400,
     description: "A Twitterbot which is a Markov chain trained on a combination of tweets scraped from Elon Musks account, \
                   and a large dataset of childrens books. Utilizes the Tweepy API in Python, and various AWS services to \
                   automatically tweet daily updates.",
@@ -83,7 +82,7 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
-    <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+    <Box sx={{ width: '50%', overflow: 'hidden'}}>
       <SwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
@@ -101,13 +100,13 @@ function SwipeableTextMobileStepper() {
                 component="img"
                 sx={{
                   height: step.size,
-                  width: '100%',
+                  width: '99%',
                 }}
                 src={step.imgPath}/>
               : <TwitterTimelineEmbed
               sourceType="profile"
               screenName="ElonStoryBot"
-              options={{height: 400}}
+              options={{height: step.size}}
               
             />}
               <Button sx={{ mb:2, mt:2 }} variant="contained" color='secondary' href={step.link} disableRipple="true" startIcon={<GitHubIcon/>}> Github </Button>
