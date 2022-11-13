@@ -1,14 +1,16 @@
 import './App.css';
-import ProfileCard from './components/cards/profile';
-import CustomAppBar from './components/navbar/appbar';
-import AboutBody from './pages/about/body';
-import CustomParticles from './components/body/customparticles';
+
 import { Fade, Grid, Typography } from '@mui/material';
 import { Redirect, Route, Switch } from 'react-router';
-import ProjectsBody from './pages/projects/body';
+
+import ProfileCard from './components/cards/profile';
+import CustomAppBar from './components/navbar/appbar';
+import CustomParticles from './components/body/customparticles';
 import BlogNav from './pages/blog/blognav';
-import CustomBlogBody from './pages/blog/body';
 import { blogPosts } from './pages/blog/blogposts';
+import CustomBlogBody from './pages/blog/blogbody';
+import AboutBody from './pages/about/aboutbody';
+import ProjectsBody from './pages/projects/projectsbody';
 
 function App() {
 
