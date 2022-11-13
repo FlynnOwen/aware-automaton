@@ -9,7 +9,7 @@ import { Box } from '@mui/material';
 export default function WorkAccordion(props) {
   return (
     <Box sx={{mt: props.mt}}>
-      <Accordion sx={{ml: props.ml, mr: props.mr}} disableGutters={true}>
+      <Accordion sx={{ml: props.ml, mr: props.mr}} disableGutters={true} variant='outlined'>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -27,7 +27,7 @@ export default function WorkAccordion(props) {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion sx={{ml: props.ml, mr: props.mr}} disableGutters={true}>
+      <Accordion sx={{ml: props.ml, mr: props.mr}} disableGutters={true} variant='outlined'>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -46,7 +46,7 @@ export default function WorkAccordion(props) {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion sx={{ml: props.ml, mr: props.mr, mb: props.mb}} disableGutters={true}>
+      <Accordion sx={{ml: props.ml, mr: props.mr, mb: props.mb}} disableGutters={true} variant='outlined'>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -63,7 +63,7 @@ export default function WorkAccordion(props) {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion sx={{ml: props.ml, mr: props.mr, mb: props.mb}} disableGutters={true}>
+      <Accordion sx={{ml: props.ml, mr: props.mr, mb: props.mb}} disableGutters={true} >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"

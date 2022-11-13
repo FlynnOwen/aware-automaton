@@ -10,7 +10,7 @@ import { Box, Button } from '@mui/material';
 export default function AcademicAccordion(props) {
     return (
       <Box sx={{mt: props.mt}}>
-        <Accordion sx={{ml: props.ml, mr: props.mr}} disableGutters={true}>
+        <Accordion sx={{ml: props.ml, mr: props.mr}} disableGutters={true} variant='outlined'>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
@@ -33,7 +33,7 @@ export default function AcademicAccordion(props) {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion sx={{ml: props.ml, mr: props.mr}} disableGutters={true}>
+        <Accordion sx={{ml: props.ml, mr: props.mr}} disableGutters={true} variant='outlined'>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2a-content"
@@ -52,7 +52,7 @@ export default function AcademicAccordion(props) {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion sx={{ml: props.ml, mr: props.mr, mb: props.mb}} disableGutters={true}>
+        <Accordion sx={{ml: props.ml, mr: props.mr, mb: props.mb}} disableGutters={true} >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2a-content"

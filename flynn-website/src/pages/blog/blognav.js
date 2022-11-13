@@ -1,4 +1,4 @@
-import { Fade, List, ListItem, ListItemText, Paper, Typography } from '@mui/material';
+import { Divider, Fade, List, ListItem, ListItemText, Paper, Typography } from '@mui/material';
 import * as React from 'react';
 import { useHistory } from 'react-router-dom';
 
