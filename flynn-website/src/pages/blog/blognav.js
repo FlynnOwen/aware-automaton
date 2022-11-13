@@ -17,7 +17,7 @@ function BlogNav(props) {
   return (
     <Fade in={true} timeout={{enter: 1000}}>
     <Paper sx={{m: 5, height:500, width: 250, textAlign:"center"}}>
-        <Typography variant="h4" sx={{ m:3 }}> Blog Posts </Typography>
+        <Typography variant="h4" padding="30px"> Blog Posts </Typography>
     <List sx={style} component="nav" aria-label="mailbox folders">
         
     {props.blogPosts.map((step, index) => (

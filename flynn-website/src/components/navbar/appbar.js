@@ -48,7 +48,7 @@ function CustomAppBar(props) {
       </Typography>
       <Divider />
       <List>
-        {navItems.map(({item, url}) => (
+        {navItems.map(({item}) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary={item} />

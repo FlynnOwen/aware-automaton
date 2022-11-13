@@ -7,7 +7,7 @@ function CustomProjectsBody() {
   return (
     <Fade in={true} timeout={{enter: 1000}}>
     <Paper elevation={3} sx={{ mt: 5, mb: 5, textAlign: "center"}}>
-        <Typography variant="h3" sx={{ mt: 3 }}>&#123;Projects&#125;</Typography>
+        <Typography variant="h3" padding="30px">&#123;Projects&#125;</Typography>
         <Divider variant="middle" sx={{ mt: 3 }} />
         <Grid
         container
