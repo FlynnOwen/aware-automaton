@@ -1,14 +1,14 @@
 import './App.css';
 import ProfileCard from './components/cards/profile';
 import CustomAppBar from './components/navbar/appbar';
-import CustomBody from './components/body/body';
+import AboutBody from './pages/about/body';
 import CustomParticles from './components/body/customparticles';
 import { Fade, Grid, Typography } from '@mui/material';
 import { Redirect, Route, Switch } from 'react-router';
-import CustomProjectsBody from './pages/projects/body';
+import ProjectsBody from './pages/projects/body';
 import BlogNav from './pages/blog/blognav';
 import CustomBlogBody from './pages/blog/body';
-import { blogPosts } from './pages/blog/blogpage';
+import { blogPosts } from './pages/blog/blogposts';
 
 function App() {
 
@@ -53,7 +53,7 @@ function App() {
         </Route>
 
         <Route path="/about">
-          <CustomBody />
+          <AboutBody />
         </Route>
 
         <Route path="/blog/:index">
@@ -61,7 +61,7 @@ function App() {
         </Route>
 
         <Route path="/projects">
-          <CustomProjectsBody />
+          <ProjectsBody />
         </Route>
 
       </Switch>

@@ -1,18 +1,30 @@
 import * as React from 'react';
-import { Box, Divider, Fade, Paper, Typography } from '@mui/material';
-import BlogPost from './blogpost';
+import { Box, Chip, Typography } from '@mui/material';
+import CustomBody from '../../components/body/body';
+import { useParams} from 'react-router-dom'
+import {blogPosts} from './blogposts'
 
-function CustomBlogBody() {
+function BlogPost() {
+
+  const {index} = useParams()
+  const blogPost =  blogPosts[index]
+  console.log(index);
 
   return (
-    <Fade in={true} timeout={{ enter: 1000 }}>
-      <Paper elevation={3} sx={{ mt: 5, mb: 5, padding:5, textAlign: "center" }}>
-        <Typography variant="h3" padding="30px">&#123;Blog&#125;</Typography>
-        <Divider variant="middle" sx={{ mt: 3 }} />
-        <BlogPost ></BlogPost>
-      </Paper>
-    </Fade>
+    <Box>
+    <Typography variant="h4" sx={{ m:3 }}> {blogPost.title} </Typography>
+    <Chip sx={{ mt:1, mb:4 }} label={blogPost.date} />
+    <Typography sx={{ ml: 8, mr:8, mb:8 }}> {blogPost.description} </Typography>
+
+    </Box>
   );
 }
 
-export default CustomBlogBody;
+function BlogBody() {
+
+  return (
+    <CustomBody title="Blog" body={<BlogPost/>}/>
+  );
+}
+
+export default BlogBody;
