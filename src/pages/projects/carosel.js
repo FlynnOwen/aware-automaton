@@ -17,7 +17,7 @@ const images = [
     type: 'image',
     label: 'rbclust',
     imgPath:
-    require('../../images/EM.gif'),
+    require('../../images/projects/EM.gif'),
     size: 240,
     description: "A dynamic library for GLM modelling of finite mixture models in R. \
                   A novel 'divide and conquer' method is used for fitting mixture models with unknown numbers of components, \
@@ -28,7 +28,7 @@ const images = [
     type: 'image',
     label: 'GOLC',
     imgPath:
-      require('../../images/GOLc.gif'),
+      require('../../images/projects/GOLc.gif'),
       size: 445,
     description: "A CLI application for game of life, written in C. It's fast, and renders well, with various input options. \
                   Now has a few followers on Github.",
@@ -48,7 +48,7 @@ const images = [
   {
     type: 'image',
     label: 'The All Knowing One',
-    imgPath: require('../../images/GPT-3.gif'),
+    imgPath: require('../../images/projects/GPT-3.gif'),
     size: 380,
     description: "A 'connector' between Open AI's GPT-3 API and Facebook Messenger. Hosted on a Flask server, and uses a \
                   PostgreSQL database to asynchronously log and remember conversations between users.",
@@ -57,7 +57,7 @@ const images = [
   {
     type: 'image',
     label: '{Aware Automaton}',
-    imgPath: require('../../images/Aware.gif'),
+    imgPath: require('../../images/projects/Aware.gif'),
     size: 380,
     description: "This website. Written in React to host my projects, blog and generally learn more about front end development.",
     link: "https://github.com/FlynnOwen/flynn-website-React"

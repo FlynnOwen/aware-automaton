@@ -17,7 +17,7 @@ export default function ProfileCard() {
         <CardMedia
           component="img"
           height="300"
-          image={require("../../images/Me-pixel-2.png")}
+          image={require("../../images/cards/Me-pixel-2.png")}
           alt="Binkie"
         />
         <CardContent>
