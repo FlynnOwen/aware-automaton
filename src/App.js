@@ -1,5 +1,3 @@
-import './App.css';
-
 import { Fade, Grid, Typography } from '@mui/material';
 import { Redirect, Route, Switch } from 'react-router';
 
