@@ -18,12 +18,12 @@ function App() {
       <CustomParticles />
       <CustomAppBar />
       <Grid container align = "center" direction = {{xs: "column", sm: "column", md: "row"}}>
-      <Grid xs = {12} md={3} order = {{xs: 3, sm: 3, md: 1}}>
+      <Grid xs = {12} md={3} order = {{xs: 3, md: 1}}>
       <Route path={["/about", "/blog", "/projects"]}>
         <ProfileCard /> 
       </Route>
       </Grid>
-      <Grid xs={12} md={6} order = {{xs: 2, sm: 2, md: 2}} alignItems="center">
+      <Grid xs={12} md={6} order = {{xs: 2, md: 2}} alignItems="center">
 
       <Switch>
       <Route path="/" exact>
@@ -67,7 +67,7 @@ function App() {
       </Switch>
       </Grid>
 
-      <Grid xs = {12} md={3} order = {{xs: 1, sm: 1, md: 3}}>
+      <Grid xs = {12} md={3} order = {{xs: 1, md: 3}}>
 
       <Route path="/blog">
         <BlogNav blogPosts={blogPosts}/>
