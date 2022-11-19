@@ -62,7 +62,7 @@ function CustomAppBar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <AppBar component="nav" style={{ background: '#001a33', boxShadow: 'None' }}>
-        <Toolbar style={{minHeight: 48}}>
+        <Toolbar style={{minHeight: 48}} sx={{justifyContent: {xs:'space-around', sm: 'normal'}}}>
           <Typography
             variant="h6"
             component="div"
@@ -70,7 +70,7 @@ function CustomAppBar(props) {
           >
             &#123;Aware Automaton&#125;
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box sx={{ display: {xs: 'flex', sm: 'block'}}}>
             {navItems.map(( {item, url} ) => (
               <Button key={item} onClick={() => history.push(url)} sx={{ color: '#fff' }}>
                 {item}
