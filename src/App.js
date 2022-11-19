@@ -17,7 +17,7 @@ function App() {
 
       <CustomParticles />
       <CustomAppBar />
-      <Grid container spacing={3}>
+      <Grid container align = "center">
       <Grid xs={3}>
       <Route path={["/about", "/blog", "/projects"]}>
         <ProfileCard /> 
