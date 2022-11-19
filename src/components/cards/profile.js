@@ -42,12 +42,12 @@ export default function ProfileCard() {
             </Button>
             </Grid>
             <Grid itemScope>
-            <Button href='https://github.com/FlynnOwen' variant="contained" size="small" color='secondary' sx={{m: 0.2}}>
-            <ContactPageIcon/>
+            <Button href={require("../../images/Flynn_Owen_-_Data_Engineer.pdf")} download='FlynnOwenCV' variant="contained" size="small" color='secondary' sx={{m: 0.2}}>
+              <ContactPageIcon/>
             </Button>
             </Grid>
             <Grid item>
-            <Button href='https://github.com/FlynnOwen' variant="contained" size="small" color='secondary' sx={{m: 0.2}}>
+            <Button href="mailto:flynoo49@gmail.com" variant="contained" size="small" color='secondary' sx={{m: 0.2}}>
             <EmailIcon/>
             </Button>
             </Grid>
