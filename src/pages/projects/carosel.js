@@ -82,7 +82,7 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
-    <Box sx={{ width: '50%', overflow: 'hidden'}}>
+    <Box sx={{ width: '80%', overflow: 'hidden'}}>
       <SwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
